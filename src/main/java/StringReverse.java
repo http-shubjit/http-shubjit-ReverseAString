@@ -12,7 +12,13 @@ public class StringReverse {
      * @param str a String.
      * @return the reverse of str.
      */
-    public String reverse(String str){
-        return null;
+    public String reverse(String str) {
+        String revString = "";
+        String[] strarr = str.split("");
+        for (int i = strarr.length - 1; i >= 0; i--) {
+            revString += strarr[i];
+        }
+        return revString;
+        
     }
 }
